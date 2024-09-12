@@ -1,0 +1,5 @@
+-- whenever I enter a new buffer, change the working 
+-- directory to that where the current file
+-- NOTE: Causes issues with telescope integration; will try to find another solution
+--
+-- vim.api.nvim_create_autocmd("BufEnter", { pattern = "*", command = "lcd %:p:h" })
